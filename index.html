@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="main" class="fixed w-full h-full">
+        <div id="fs" class="absolute w-full h-full top-0 bg-[#383838] z-[2]"></div>
+        <div id="elem" class="absolute w-full h-full top-0 bg-[#5ec4ff] z-[1]"></div>
+    </div>
+    <nav class="bg-[#111] px-3 py-1 fixed top-0 w-full z-[9999]">
+        <button id="ham_1"><i class="fas fa-bars"></i></button>
+        <button id="ham_2"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#intro">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="flex flex-col items-center justify-center text-center min-h-[70vh] max-w-[70%] mx-auto" id="home">
+        <div
+            class="gradient-text text-white text-[3.5rem] font-[700] tracking-[2px] mb-[10px] animate-[fadeIn_2s_ease_forwards] font-[Playfair_Display]">
+            Bibhu Kumar Singh</div>
+        <div class="max-w-[80%] flex items-center">
+            <span class="text-2xl font-bold text-[#0db7ed] flex justify-start">is a…</span>
+            <span class="type-area">
+                <span id="typing"></span>
+            </span>
+        </div>
+
+        <div class="mt-[25px] inline-flex gap-[20px]">
+            <a href="/"
+                class="group inline-flex items-center gap-2 px-[14px] py-[6px] text-white rounded-xl overflow-hidden transition-all duration-500 ease-in-out hover:- bg-[#006fac] hover:bg-[#005b8c]">
+                <i class="fab fa-linkedin text-[24px]"></i>
+                <span
+                    class="opacity-0 max-w-0 overflow-hidden whitespace-nowrap text-[20px] font-bold transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:max-w-[100px]">
+                    LinkedIn
+                </span>
+            </a>
+
+            <a href="/"
+                class="group inline-flex items-center gap-2 px-[14px] py-[6px] text-white rounded-xl font-sans overflow-hidden transition-all duration-300 ease-in-out hover:- bg-[#24292e] hover:bg-[#1f2327]">
+                <i class="fab fa-github text-[24px]"></i>
+                <span
+                    class="opacity-0 max-w-0 overflow-hidden whitespace-nowrap text-[20px] font-bold transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:max-w-[100px]">
+                    Github
+                </span>
+            </a>
+
+            <a href="/"
+                class="group inline-flex items-center gap-2 px-[14px] py-[6px] text-white rounded-xl font-sans overflow-hidden transition-all duration-300 ease-in-out hover:- bg-[#2cd46b] hover:bg-[#25b85d]">
+                <i class="fab fa-whatsapp text-[24px]"></i>
+                <span
+                    class="opacity-0 max-w-0 overflow-hidden whitespace-nowrap text-[20px] font-bold transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:max-w-[100px]">
+                    Whatsapp
+                </span>
+            </a>
+
+            <a href="/"
+                class="group inline-flex items-center gap-2 px-[14px] py-[6px] text-white rounded-xl font-sans overflow-hidden transition-all duration-300 ease-in-out hover:- bg-[#ea4335] hover:bg-[#c73a2d]">
+                <i class="fas fa-envelope text-[24px]"></i>
+                <span
+                    class="opacity-0 max-w-0 overflow-hidden whitespace-nowrap text-[20px] font-bold transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:max-w-[100px]">
+                    G-mail
+                </span>
+            </a>
+
+        </div>
+    </div>
+
+    <canvas id="bg" class="block bg-black fixed top-0 left-0 -z-10"></canvas>
+
+    <div id="intro" class="flex max-w-[80%] mx-auto p-[15px] items-center gap-[60px] bg-transparent">
+        <div id="name" class="text-[#fff] max-w-[45%] font-[Playfair_Display]">
+            <h4 class="text-[2rem]">Bibhu Kumar Singh</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores, perspiciatis vitae quisquam
+                aperiam consectetur, delectus expedita reiciendis, porro maxime rem tempora corrupti dolorum ipsum natus
+                neque quo. Laboriosam obcaecati culpa fuga animi doloribus autem cumque atque cupiditate maxime,
+                veritatis eaque a aliquam, quasi eius fugiat quod officiis, provident libero vitae. Atque nihil fugit ex
+                quam reiciendis perspiciatis itaque consequuntur doloribus impedit, voluptatem ipsam nam modi magni
+                fugiat saepe sequi.</p>
+            <div>
+                <a href="/static/media/cv.7ab812a10ba2d81a7ff3.pdf" target="_blank" rel="noopener noreferrer"
+                    download="cv.pdf"
+                    class="inline-flex items-center gap-2 px-[12px] py-[6px] bg-[#4CAF50] text-white text-[15px] rounded-md hover:bg-[#45a049] hover:-translate-y-[2px] transition mt-[14px]">
+                    <i class="fa-solid fa-download text-[18px]"></i> Download CV
+                </a>
+            </div>
+
+        </div>
+        <div id="logos">
+            <fieldset
+                class="border-[1.5px] border-[#00ffff] rounded-[18px] px-[15px] py-[10px] mt-[15px] bg-[rgba(0,255,255,0.05)] transition-all duration-300 ease-in-out hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] hover:-translate-y-[2px]">
+                <legend class="text-[18px] font-bold text-[aqua] px-[10px] py-0">Major Skills</legend>
+                <li>➤ Machine Learning & Artificial Intelligence</li>
+                <li>➤ Low-Level System Design</li>
+                <li>➤ Data Structures & Algorithms</li>
+            </fieldset>
+            <fieldset
+                class="border-[1.5px] border-[#00ffff] rounded-[18px] px-[15px] py-[10px] mt-[15px] bg-[rgba(0,255,255,0.05)] transition-all duration-300 ease-in-out hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] hover:-translate-y-[2px]">
+                <legend class="text-[18px] font-bold text-[aqua] px-[10px] py-0">Front-end Development</legend>
+                <div id="wrap">
+                    <div class="skill" data-name="HTML">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                            class="h-[50px] grayscale contrast-[200%] cursor-pointer hover:grayscale-0 hover:contrast-100">
+                    </div>
+                    <div class="skill" data-name="CSS">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                            class="h-[50px] grayscale contrast-[200%] cursor-pointer hover:grayscale-0 hover:contrast-100">
+                    </div>
+                    <div class="skill" data-name="JavaScript">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+                            class="h-[50px] grayscale contrast-[200%] cursor-pointer hover:grayscale-0 hover:contrast-100">
+                    </div>
+                    <div class="skill" data-name="Tailwind CSS">
+                        <i
+                            class="cbp-ig-icon devicon-tailwindcss-original text-[#b0b0b0] text-[70px] cursor-pointer hover:text-[aqua]"></i>
+                    </div>
+                    <div class="skill" data-name="React">
+                        <i
+                            class="cbp-ig-icon devicon-react-original text-[#b0b0b0] text-[70px] cursor-pointer hover:text-[aqua]"></i>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset
+                class="border-[1.5px] border-[#00ffff] rounded-[18px] px-[15px] py-[10px] mt-[15px] bg-[rgba(0,255,255,0.05)] transition-all duration-300 ease-in-out hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] hover:-translate-y-[2px]">
+                <legend class="text-[18px] font-bold text-[aqua] px-[10px] py-0">Back-end Development</legend>
+                <div id="wrap">
+                    <div class="skill" data-name="Mongo-DB">
+                        <i
+                            class="devicon-mongodb-plain text-[#b0b0b0] text-[70px] cursor-pointer hover:text-[#50ac44]"></i>
+                    </div>
+                    <div class="skill" data-name="MY-SQL">
+                        <i
+                            class="devicon-mysql-plain text-[#b0b0b0] text-[70px] cursor-pointer hover:text-[#00618a]"></i>
+                    </div>
+                    <div class="skill" data-name="Express-Js">
+                        <i
+                            class="devicon-express-original text-[#b0b0b0] text-[70px] cursor-pointer hover:text-[#ffffff]"></i>
+                    </div>
+                    <div class="skill" data-name="Docker">
+                        <i
+                            class="devicon-docker-plain text-[#b0b0b0] text-[70px] cursor-pointer hover:text-[#0db7ed]"></i>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="skill" data-name="Docker">
+                <i class="devicon-docker-plain text-transparent"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <h2 class="text-5xl font-bold font-[Playfair_Display] bg-gradient-to-r from-teal-300 to-blue-400 bg-clip-text text-transparent drop-shadow-lg m-10"
+        id="projects">ProJects</h2>
+
+    <div class="flex flex-wrap justify-around gap-[20px] max-w-[90%] mx-auto mb-[10%]">
+        <a
+            class="border border-cyan-400 rounded-lg px-6 py-4 text-cyan-200 text-center text-[22px] font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.7)] hover:-translate-y-1 cursor-pointer">
+            Front-end projects
+        </a>
+
+        <a
+            class="border border-cyan-400 rounded-lg px-6 py-4 text-cyan-200 text-center text-[22px] font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.7)] hover:-translate-y-1 cursor-pointer">
+            Back-end projects
+        </a>
+
+        <a
+            class="border border-cyan-400 rounded-lg px-6 py-4 text-cyan-200 text-center text-[22px] font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.7)] hover:-translate-y-1 cursor-pointer">
+            Low-level system projects
+        </a>
+
+        <a
+            class="border border-cyan-400 rounded-lg px-6 py-4 text-cyan-200 text-center text-[22px] font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.7)] hover:-translate-y-1 cursor-pointer">
+            Hackathon projects
+        </a>
+
+        <a
+            class="border border-cyan-400 rounded-lg px-[16px] py-[10px] text-cyan-200 text-center text-[22px] font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.7)] hover:-translate-y-1 cursor-pointer">
+            Data Science & Machine Learning projects
+        </a>
+
+    </div>
+
+    <h2 class="text-5xl font-bold font-[Playfair_Display] bg-gradient-to-r from-teal-300 to-blue-400 bg-clip-text text-transparent drop-shadow-lg m-10">Certificates</h2>
+
+
+    <div class="overflow-hidden w-full py-[20px]" id="certificate">
+        <div class="flex gap-5 will-change-transform" id="slider-track">
+            <img src="cert1.png" alt="Certificate 1"
+                class="h-[200px] min-w-[300px] rounded-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.4)] transition-transform transition-filter duration-300 ease-linear cursor-pointer hover:scale-[1.005] hover:brightness-105 hover:z-10">
+            <img src="cert2.png" alt="Certificate 2"
+                class="h-[200px] min-w-[300px] rounded-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.4)] transition-transform transition-filter duration-300 ease-linear cursor-pointer hover:scale-[1.005] hover:brightness-105 hover:z-10">
+            <img src="cert3.png" alt="Certificate 3"
+                class="h-[200px] min-w-[300px] rounded-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.4)] transition-transform transition-filter duration-300 ease-linear cursor-pointer hover:scale-[1.005] hover:brightness-105 hover:z-10">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span
+            class="close-btn absolute top-[20px] right-[30px] text-2xl text-white cursor-pointer select-none">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Certificate">
+    </div>
+
+    <h2 class="text-5xl font-bold font-[Playfair_Display] bg-gradient-to-r from-teal-300 to-blue-400 bg-clip-text text-transparent drop-shadow-lg ml-6"
+        id="contact">
+        Contact Me
+    </h2>
+
+    <section
+        class="w-full h-[auto] flex items-center justify-around z-10  p-5 max-w-[90%] mx-auto">
+
+        <a href="/"
+            class="group inline-flex items-center gap-2 px-6 py-3 text-white rounded-xl border-2 border-transparent backdrop-blur-md bg-white/10 shadow-lg shadow-blue-500/40 transition-all duration-700 ease-in-out hover:scale-110 hover:shadow-blue-500/70 hover:border-[#006fac] text-2xl font-[600]">
+            <i class="fab fa-linkedin text-[24px]"></i> LinkedIn
+        </a>
+
+        <a href="/"
+            class="group inline-flex items-center gap-2 px-6 py-3 text-white rounded-xl border-2 border-transparent backdrop-blur-md bg-white/10 shadow-lg shadow-gray-500/40 transition-all duration-700 ease-in-out hover:scale-110 hover:shadow-gray-500/70 hover:border-[#24292e] text-2xl font-[600]">
+            <i class="fab fa-github text-[24px]"></i> Github
+        </a>
+
+        <a href="/"
+            class="group inline-flex items-center gap-2 px-6 py-3 text-white rounded-xl border-2 border-transparent backdrop-blur-md bg-white/10 shadow-lg shadow-green-500/40 transition-all duration-700 ease-in-out hover:scale-110 hover:shadow-green-500/70 hover:border-[#2cd46b] text-2xl font-[600]">
+            <i class="fab fa-whatsapp text-[24px]"></i> Whatsapp
+        </a>
+
+        <a href="/"
+            class="group inline-flex items-center gap-2 px-6 py-3 text-white rounded-xl border-2 border-transparent backdrop-blur-md bg-white/10 shadow-lg shadow-red-500/40 transition-all duration-700 ease-in-out hover:scale-110 hover:shadow-red-500/70 hover:border-[#ea4335] text-2xl font-[600]">
+            <i class="fas fa-envelope text-[24px]"></i> G-mail
+        </a>
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+        }
+        h1 {
+            font-size: 5.5rem;
+            color: aqua;
+            display: flex;
+            align-items: baseline;
+        }
+        #dots {
+            display: inline-flex;
+            gap: 0.5rem;
+            width: 7rem;
+            justify-content: flex-start;
+        }
+        .dot {
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: aqua;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Coming Soon  
+        <span id="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </span>
+    </h1>
+
+    <script>
+        async function main() {
+            const dots = document.querySelectorAll('.dot');
+            let count = 0;
+
+            setInterval(() => {
+                dots.forEach((dot, index) => {
+                    dot.style.opacity = index < count ? 1 : 0;
+                });
+                count = (count % 5) + 1;
+            }, 200);
+        }
+        main();
+    </script>
+</body>
+</html>
