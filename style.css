@@ -233,6 +233,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 700px) {
+    fieldset img {
+        filter: grayscale(0);
+    }
     #typing {
         display: block;
         font-size: 2rem;
@@ -305,3 +308,4 @@ nav ul li a:hover {
         gap: 25px;
     }
 }
+
